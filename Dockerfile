@@ -2,7 +2,7 @@ FROM python:3
 
 WORKDIR /data
 
-RUN pip install django==3.2
+RUN apt update && apt install -y python3.12-venv
 
 COPY . .
 
